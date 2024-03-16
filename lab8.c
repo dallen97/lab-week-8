@@ -41,7 +41,7 @@ void mergeSort(int pData[], int l, int r)
 	int* left = (int*)Alloc(sizeof(int) * num1);
 	int* right = (int*)Alloc(sizeof(int) * num2);
 
-	memccpy(left, &pData[l], sizeof(int) * num1);
+	memcpy(left, &pData[l], sizeof(int) * num1);
 	memcpy(right, &pData[mid + 1], sizeof(int) * num2);
 	int i = 0, j = 0, k = l;
 	while (i < num1 && j < num2) {
